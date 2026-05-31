@@ -1,0 +1,35 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# ===== 測試與快取 =====
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ===== 虛擬環境 =====
+.venv/
+venv/
+env/
+
+# ===== 機密與環境變數 =====
+.env
+*.env
+
+# ===== 專案資料/輸出（執行時自動產生）=====
+data_store/
+*.db
+*.sqlite
+*.sqlite3
+boot_log.txt
+*.log
+
+# ===== IDE / 系統 =====
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
