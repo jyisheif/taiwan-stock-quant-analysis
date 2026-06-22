@@ -303,8 +303,8 @@ def render_home(fetcher, processor):                      # 渲染首頁
     # --- AI 熱門推薦 ---
     st.subheader("🔥 AI 熱門推薦")                         # 區塊標題
     st.caption("依本地規則式 AI 綜合評分排序（首頁離線計算，不耗用 API 額度）。")  # 說明
-    top = recs[:3]                                        # 取分數最高三檔
-    cols = st.columns(3)                                  # 三欄並排
+    top = recs[:5]                                        # 取分數最高三檔
+    cols = st.columns(5)                                  # 三欄並排
     for col, (code, name, res) in zip(cols, top):         # 逐一渲染卡片
         with col:                                         # 進入該欄
             render_ai_card(res, subtitle=f"{name}（{code}）")  # 顯示 AI 卡片
